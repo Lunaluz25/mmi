@@ -1,0 +1,133 @@
+/* ========================
+   VARIABLES
+======================== */
+:root {
+  --white: #ffffff;
+  --orange: #ff7a18;
+  --orange-soft: #ff9f1c;
+  --dark: #2a2a2a;
+  --gray: #6f6f6f;
+  --blur-orange: rgba(255, 122, 24, 0.18);
+}
+
+/* ========================
+   SECCIÓN GENERAL
+======================== */
+.carousel-section {
+  background: transparent;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* TITULO */
+.carousel-section h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.carousel-section h1::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--orange), var(--orange-soft));
+  display: block;
+  margin: 0.8rem auto 0;
+  border-radius: 4px;
+}
+
+/* ========================
+   CONTENEDOR
+======================== */
+.carousel-container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ========================
+   SLIDES
+======================== */
+.carousel-slide {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s ease;
+  filter: grayscale(100%);
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  transform: scale(1);
+  filter: grayscale(0%);
+}
+
+/* IMÁGENES */
+.carousel-slide img {
+  max-height: 120px;
+  max-width: 220px;
+  object-fit: contain;
+  padding: 1rem;
+  border-radius: 16px;
+  background: white;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s ease;
+}
+
+/* HOVER INDUSTRIAL ELEGANTE */
+.carousel-slide.active img:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.12),
+    0 0 25px var(--blur-orange);
+}
+
+/* ========================
+   EFECTO DIFUMINADO LATERAL
+======================== */
+.carousel-container::before,
+.carousel-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+}
+
+.carousel-container::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.carousel-container::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media (max-width: 768px) {
+  .carousel-section {
+    padding: 3rem 1rem;
+  }
+
+  .carousel-section h1 {
+    font-size: 1.4rem;
+  }
+
+  .carousel-slide img {
+    max-height: 90px;
+    max-width: 180px;
+  }
+}

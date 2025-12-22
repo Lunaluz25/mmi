@@ -1,0 +1,148 @@
+/* ========================
+   VARIABLES
+======================== */
+:root {
+  --white: #ffffff;
+  --orange: #ff7a18;
+  --orange-soft: #ff9f1c;
+  --dark: #2b2b2b;
+  --gray: #5f5f5f;
+  --border: #ededed;
+  --blur-orange: rgba(255, 122, 24, 0.18);
+}
+
+/* ========================
+   CONTENEDOR GENERAL
+======================== */
+.servicios-container {
+  background: transparent;
+  max-width: 1280px;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+
+/* ========================
+   TITULO
+======================== */
+.titulo-container {
+  text-align: center;
+}
+
+.titulo-naranja {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.titulo-naranja-gradiente {
+  background: linear-gradient(90deg, var(--orange), var(--orange-soft));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.titulo-naranja-gradiente::after {
+  content: "";
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--orange), var(--orange-soft));
+  display: block;
+  margin: 0.8rem auto 0;
+  border-radius: 4px;
+}
+
+/* ========================
+   FILA DE TARJETAS
+======================== */
+.servicios-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* ========================
+   TARJETAS
+======================== */
+.slot {
+  display: flex;
+  justify-content: center;
+}
+
+.user-card {
+  width: 100%;
+  min-height: 140px;
+  background: linear-gradient(
+    135deg,
+    #ffffff 65%,
+    rgba(255, 122, 24, 0.04)
+  );
+  border-radius: 20px;
+  padding: 2rem 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: default;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* DIFUMINADO */
+.user-card::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(
+    circle,
+    var(--blur-orange),
+    transparent 70%
+  );
+  top: -60px;
+  right: -60px;
+}
+
+/* HOVER */
+.user-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.08),
+    0 0 35px var(--blur-orange);
+}
+
+/* TEXTO */
+.user-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.4;
+  position: relative;
+  z-index: 1;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media (max-width: 768px) {
+  .servicios-container {
+    padding: 3rem 1rem;
+  }
+
+  .titulo-naranja {
+    font-size: 1.4rem;
+  }
+
+  .user-card {
+    min-height: 120px;
+    padding: 1.5rem;
+  }
+
+  .user-title {
+    font-size: 0.95rem;
+  }
+}
