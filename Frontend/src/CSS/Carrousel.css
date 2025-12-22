@@ -2,11 +2,7 @@
    VARIABLES
 ======================== */
 :root {
-  --white: #ffffff;
   --orange: #ff7a18;
-  --orange-soft: #ff9f1c;
-  --dark: #2a2a2a;
-  --gray: #6f6f6f;
   --blur-orange: rgba(255, 122, 24, 0.18);
 }
 
@@ -14,41 +10,21 @@
    SECCIÓN GENERAL
 ======================== */
 .carousel-section {
+  width: 100%;
   background: transparent;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-/* TITULO */
-.carousel-section h1 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--dark);
-  margin-bottom: 2.5rem;
-  position: relative;
-}
-
-.carousel-section h1::after {
-  content: "";
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--orange), var(--orange-soft));
-  display: block;
-  margin: 0.8rem auto 0;
-  border-radius: 4px;
+  padding: 0;
+  margin: 0;
 }
 
 /* ========================
-   CONTENEDOR
+   CONTENEDOR (FULL WIDTH)
 ======================== */
 .carousel-container {
   position: relative;
-  max-width: 900px;
-  margin: auto;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;        /* OCUPA TODO EL ANCHO */
+  max-width: 100%;    /* SIN LÍMITE */
+  height: 360px;      /* ALTURA DEL CARRUSEL */
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -57,77 +33,43 @@
 ======================== */
 .carousel-slide {
   position: absolute;
+  inset: 0;
   opacity: 0;
-  transform: scale(0.9);
-  transition: all 0.6s ease;
-  filter: grayscale(100%);
+  transition: opacity 0.7s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-slide.active {
   opacity: 1;
-  transform: scale(1);
-  filter: grayscale(0%);
-}
-
-/* IMÁGENES */
-.carousel-slide img {
-  max-height: 120px;
-  max-width: 220px;
-  object-fit: contain;
-  padding: 1rem;
-  border-radius: 16px;
-  background: white;
-  box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.08),
-    0 0 0 1px rgba(0, 0, 0, 0.04);
-  transition: all 0.4s ease;
-}
-
-/* HOVER INDUSTRIAL ELEGANTE */
-.carousel-slide.active img:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.12),
-    0 0 25px var(--blur-orange);
 }
 
 /* ========================
-   EFECTO DIFUMINADO LATERAL
+   IMÁGENES (FULL WIDTH)
 ======================== */
-.carousel-container::before,
-.carousel-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 80px;
-  height: 100%;
-  z-index: 2;
+.carousel-slide img {
+  width: 100%;        /* OCUPA TODO EL ANCHO */
+  height: 100%;       /* OCUPA TODA LA ALTURA */
+  object-fit: contain; /* cambia a cover si querés recorte */
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  transition: transform 0.4s ease;
 }
 
-.carousel-container::before {
-  left: 0;
-  background: linear-gradient(to right, white, transparent);
-}
-
-.carousel-container::after {
-  right: 0;
-  background: linear-gradient(to left, white, transparent);
+/* ========================
+   HOVER SUAVE
+======================== */
+.carousel-slide.active img:hover {
+  transform: scale(1.02);
 }
 
 /* ========================
    RESPONSIVE
 ======================== */
 @media (max-width: 768px) {
-  .carousel-section {
-    padding: 3rem 1rem;
-  }
-
-  .carousel-section h1 {
-    font-size: 1.4rem;
-  }
-
-  .carousel-slide img {
-    max-height: 90px;
-    max-width: 180px;
+  .carousel-container {
+    height: 220px;
   }
 }

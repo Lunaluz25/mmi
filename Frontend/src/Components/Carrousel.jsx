@@ -2,19 +2,12 @@ import React, { useEffect, useState } from "react";
 import "../CSS/Carrousel.css";
 
 const images = [
-  new URL("../assets/1.png", import.meta.url).href,
-  new URL("../assets/2.png", import.meta.url).href,
-  new URL("../assets/3.png", import.meta.url).href,
-  new URL("../assets/4.png", import.meta.url).href,
-  new URL("../assets/5.png", import.meta.url).href,
-  new URL("../assets/6.png", import.meta.url).href,
-  new URL("../assets/7.png", import.meta.url).href,
-  new URL("../assets/8.png", import.meta.url).href,
-  new URL("../assets/9.jpeg", import.meta.url).href,
-  new URL("../assets/10.jpeg", import.meta.url).href,
-  new URL("../assets/11.jpeg", import.meta.url).href,
-  new URL("../assets/12.png", import.meta.url).href,
-  new URL("../assets/13.jpg", import.meta.url).href,
+  new URL("../assets/001.jpg", import.meta.url).href,
+  new URL("../assets/002.jpg", import.meta.url).href,
+  new URL("../assets/003.jpeg", import.meta.url).href,
+  new URL("../assets/004.jpeg", import.meta.url).href,
+  new URL("../assets/005.jpeg", import.meta.url).href,
+
 ];
 
 const Carrousel = () => {
@@ -30,7 +23,6 @@ const Carrousel = () => {
 
   return (
     <section className="carousel-section">
-         <h1>Marcas con las que trabajabamos:</h1>
       <div className="carousel-container">
         {images.map((src, i) => (
           <div key={i} className={`carousel-slide ${i === index ? "active" : ""}`}>
