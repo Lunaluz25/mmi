@@ -5,6 +5,7 @@ import Clientes from "./Components/Clientes";
 import Productos from "./Components/Productos";
 import Ventas from "./Components/Ventas";
 import { HOME, DASHBOARD, CLIENTES, PRODUCTOS, VENTAS } from "./Router/Router";
+import "./App.css";
 
 function App() {
   return (
