@@ -9,7 +9,7 @@
     ),
     url("../assets/LOGO MMI OFICIAL.png"); /* IMAGEN EN /public */
 
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
