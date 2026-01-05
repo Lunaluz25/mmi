@@ -15,21 +15,21 @@
    CONTENEDOR GENERAL
 ======================== */
 .servicios-container {
-  background: transparent;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: auto;
-  padding: 4rem 2rem;
+  padding: 3.5rem 1.5rem;
+  background: transparent;
 }
 
 /* ========================
-   TITULO
+   TÍTULO
 ======================== */
 .titulo-container {
   text-align: center;
 }
 
 .titulo-naranja {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: var(--dark);
 }
@@ -38,27 +38,26 @@
   background: linear-gradient(90deg, var(--orange), var(--orange-soft));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative;
 }
 
 .titulo-naranja-gradiente::after {
   content: "";
-  width: 90px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--orange), var(--orange-soft));
   display: block;
-  margin: 0.8rem auto 0;
+  width: 80px;
+  height: 3px;
+  margin: 0.7rem auto 0;
   border-radius: 4px;
+  background: linear-gradient(90deg, var(--orange), var(--orange-soft));
 }
 
 /* ========================
-   FILA DE TARJETAS
+   GRID DE TARJETAS
 ======================== */
 .servicios-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1.4rem;
+  margin-top: 2.5rem;
 }
 
 /* ========================
@@ -71,58 +70,66 @@
 
 .user-card {
   width: 100%;
-  min-height: 140px;
-  background: linear-gradient(
-    135deg,
-    #f7af6f 100%,
-    rgba(255, 122, 24, 0.04)
-  );
-  border-radius: 20px;
-  padding: 2rem 1.8rem;
+  min-height: 95px;
+  padding: 1.2rem 1rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  cursor: default;
+
+  background: linear-gradient(
+    135deg,
+    #e0d9d9 70%,
+    rgba(255, 122, 24, 0.04)
+  );
+
+  border-radius: 16px;
+
   box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.06),
+    0 8px 20px rgba(0, 0, 0, 0.06),
     0 0 0 1px rgba(0, 0, 0, 0.04);
+
   position: relative;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* DIFUMINADO */
 .user-card::before {
   content: "";
   position: absolute;
-  width: 160px;
-  height: 160px;
-  background: radial-gradient(
-    circle,
-    var(--blur-orange),
-    transparent 70%
-  );
-  top: -60px;
-  right: -60px;
+  top: -45px;
+  right: -45px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, var(--blur-orange), transparent 70%);
 }
 
 /* HOVER */
 .user-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   box-shadow:
-    0 20px 45px rgba(0, 0, 0, 0.08),
-    0 0 35px var(--blur-orange);
+    0 16px 35px rgba(0, 0, 0, 0.08),
+    0 0 25px var(--blur-orange);
 }
 
-/* TEXTO */
+/* ========================
+   CONTENIDO (LOGOS)
+======================== */
 .user-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--dark);
-  line-height: 1.4;
   position: relative;
   z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marca-logo {
+  max-width: 80px;
+  max-height: 45px;
+  object-fit: contain;
+  filter: grayscale(0%);
 }
 
 /* ========================
@@ -137,12 +144,19 @@
     font-size: 1.4rem;
   }
 
-  .user-card {
-    min-height: 120px;
-    padding: 1.5rem;
+  .servicios-row {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.2rem;
   }
 
-  .user-title {
-    font-size: 0.95rem;
+  .user-card {
+    min-height: 85px;
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .marca-logo {
+    max-width: 65px;
+    max-height: 40px;
   }
 }
