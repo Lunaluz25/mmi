@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { useNavigate } from "react-router-dom";
 import { DASHBOARD } from "../Router/Router";
-import Logo from "../assets/0000.jpeg";
+import Logo from "../assets/LOGO MMI OFICIAL.png";
 import Cart from "./Cart";
 import "../CSS/Header.css";
 
