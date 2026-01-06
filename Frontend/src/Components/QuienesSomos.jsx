@@ -49,47 +49,7 @@ const QuienesSomos = () => {
           <div className="slot">
             <div className="user-card">
               <span className="user-title">
-                <img src={logo1} alt="1 Logo" className="marca-logo" />
-              </span>
-            </div>
-          </div>
-
-          <div className="slot">
-            <div className="user-card">
-              <span className="user-title">
-                <img src={logo2} alt="1 Logo" className="marca-logo" />
-              </span>
-            </div>
-          </div>
-
-          <div className="slot">
-            <div className="user-card">
-              <span className="user-title">
-                <img src={logo3} alt="1 Logo" className="marca-logo" />
-              </span>
-            </div>
-          </div>
-
-          <div className="slot">
-            <div className="user-card">
-              <span className="user-title">
-                <img src={logo4} alt="1 Logo" className="marca-logo" />
-              </span>
-            </div>
-          </div>
-
-          <div className="slot">
-            <div className="user-card">
-              <span className="user-title">
-                <img src={logo5} alt="1 Logo" className="marca-logo" />
-              </span>
-            </div>
-          </div>
-
-          <div className="slot">
-            <div className="user-card">
-              <span className="user-title">
-                <img src={logo6} alt="1 Logo" className="marca-logo" />
+                <img src={logo9} alt="1 Logo" className="marca-logo" />
               </span>
             </div>
           </div>
@@ -105,16 +65,23 @@ const QuienesSomos = () => {
           <div className="slot">
             <div className="user-card">
               <span className="user-title">
-                <img src={logo8} alt="1 Logo" className="marca-logo" />
+                <img src={logo11} alt="1 Logo" className="marca-logo" />
               </span>
             </div>
           </div>
 
-
-        <div className="slot">
+          <div className="slot">
             <div className="user-card">
               <span className="user-title">
-                <img src={logo9} alt="1 Logo" className="marca-logo" />
+                <img src={logo13} alt="1 Logo" className="marca-logo" />
+              </span>
+            </div>
+          </div>
+
+          <div className="slot">
+            <div className="user-card">
+              <span className="user-title">
+                <img src={logo4} alt="1 Logo" className="marca-logo" />
               </span>
             </div>
           </div>
@@ -130,39 +97,72 @@ const QuienesSomos = () => {
           <div className="slot">
             <div className="user-card">
               <span className="user-title">
-                <img src={logo11} alt="1 Logo" className="marca-logo" />
+                <img src={logo5} alt="1 Logo" className="marca-logo" />
+              </span>
+            </div>
+          </div>
+
+          <div className="slot">
+            <div className="user-card">
+              <span className="user-title">
+                <img src={logo3} alt="1 Logo" className="marca-logo" />
+              </span>
+            </div>
+          </div>
+
+
+        <div className="slot">
+            <div className="user-card">
+              <span className="user-title">
+                <img src={logo1} alt="1 Logo" className="marca-logo" />
+              </span>
+            </div>
+          </div>
+
+          <div className="slot">
+            <div className="user-card">
+              <span className="user-title">
+                <img src={logo10} alt="1 Logo" className="marca-logo" />
+              </span>
+            </div>
+          </div>
+
+          <div className="slot">
+            <div className="user-card">
+              <span className="user-title">
+                <img src={logo8} alt="1 Logo" className="marca-logo" />
               </span>
             </div>
           </div>
 
 <div className="slot">
+            <div className="user-card">
+              <span className="user-title">
+                <img src={logo6} alt="1 Logo" className="marca-logo" />
+              </span>
+            </div>
+          </div>
+
+<div className="slot">
+            <div className="user-card">
+              <span className="user-title">
+                <img src={logo2} alt="1 Logo" className="marca-logo" />
+              </span>
+            </div>
+          </div>
+
+          <div className="slot">
+            <div className="user-card">
+              <span className="user-title">
+                <img src={logo11} alt="1 Logo" className="marca-logo" />
+              </span>
+            </div>
+          </div>
+
+          <div className="slot">
             <div className="user-card">
               <span className="user-title">
                 <img src={logo12} alt="1 Logo" className="marca-logo" />
-              </span>
-            </div>
-          </div>
-
-<div className="slot">
-            <div className="user-card">
-              <span className="user-title">
-                <img src={logo13} alt="1 Logo" className="marca-logo" />
-              </span>
-            </div>
-          </div>
-
-          <div className="slot">
-            <div className="user-card">
-              <span className="user-title">
-                <img src={logo11} alt="1 Logo" className="marca-logo" />
-              </span>
-            </div>
-          </div>
-
-          <div className="slot">
-            <div className="user-card">
-              <span className="user-title">
-                <img src={logo11} alt="1 Logo" className="marca-logo" />
               </span>
             </div>
           </div>
