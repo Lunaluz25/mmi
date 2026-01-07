@@ -11,10 +11,10 @@
 ======================== */
 .carousel-section {
   width: 100%;
-  background:  linear-gradient(180deg, #f8cda7 50%, #bebdbd);
+  background:  linear-gradient(180deg, #f8cda7 0%, #bebdbd 100%);
   padding-top: 100px;
   margin: 0;
-}
+
 
 /* ========================
    CONTENEDOR (FULL WIDTH)

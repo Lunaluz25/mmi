@@ -3,9 +3,9 @@
   position: relative;
 
   background: #bebdbd;
-  background-image:
+  /* background-image:
    
-    url("../assets/LOGO MMI OFICIAL.png"); /* IMAGEN EN /public */
+    url("../assets/LOGO MMI OFICIAL.png"); IMAGEN EN /public */
 
   background-size: contain;
   background-position: center;

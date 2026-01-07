@@ -170,7 +170,6 @@ const Header = () => {
       <nav className="navbar">
         <div className="navbar-logo">
           <img src={Logo} alt="MMI Industrial" className="logo-img" />
-          <h1>MMI Industrial</h1>
         </div>
 
         <ul className="navbar-links">

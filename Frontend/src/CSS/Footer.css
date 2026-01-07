@@ -16,7 +16,8 @@
    FOOTER GENERAL
 ======================== */
 .footer {
-  background:  linear-gradient(180deg, #bebdbd, #f9b274 50%);
+  /* background:  linear-gradient(180deg, #bebdbd, #f9b274 50%); */
+  background: black;
   border-top: 1px solid var(--border);
   padding-top: 4rem;
 }
