@@ -16,8 +16,7 @@
    FOOTER GENERAL
 ======================== */
 .footer {
-  /* background:  linear-gradient(180deg, #bebdbd, #f9b274 50%); */
-  background: black;
+  background:  linear-gradient(180deg, #bebdbd, #000000 50%);
   border-top: 1px solid var(--border);
   padding-top: 4rem;
 }
@@ -45,7 +44,7 @@
 .footer-title {
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--dark);
+  color: var(--orange);
   margin-bottom: 1rem;
   letter-spacing: 0.5px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -65,7 +64,7 @@
 }
 
 .footer-subtitle.beige {
-  color: var(--dark);
+  color: var(--orange);
 }
 
 /* SUBRAYADO */
@@ -85,21 +84,21 @@
 ======================== */
 .footer-text {
   font-size: 0.95rem;
-  color: var(--gray);
+  color: var(--white);
   line-height: 1.6;
   max-width: 300px;
 }
 
 .footer-item {
   font-size: 0.9rem;
-  color: var(--gray);
+  color: var(--white);
   margin-bottom: 0.6rem;
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: default;
 }
 
 .footer-item:hover {
-  color: var(--dark);
+  color: var(--white);
   transform: translateX(4px);
 }
 
@@ -119,7 +118,7 @@
 
 .footer-bottom p {
   font-size: 0.85rem;
-  color: var(--gray);
+  color: var(--white);
 }
 
 /* ========================

@@ -12,7 +12,7 @@ import logo10 from "../assets/BREMEN.png";
 import logo11 from "../assets/CALABRO.png";
 import logo12 from "../assets/CONARCO.png";
 import logo13 from "../assets/CUIDEX.png";
-import logo14 from "../assets/DUPONT.jpeg";
+import logo14 from "../assets/DUPONT.png";
 import logo15 from "../assets/ELABUELO.png";
 import logo16 from "../assets/ELROBLE.png";
 import logo17 from "../assets/ESAB.png";
@@ -29,6 +29,8 @@ import logo27 from "../assets/STIHL.png";
 import logo28 from "../assets/TEKBOND.png";
 import logo29 from "../assets/TIMOX.png";
 import logo30 from "../assets/TYROLIT.png";
+import logo31 from "../assets/3M.png";
+import logo32 from "../assets/OMBU.png";
 
 
 
@@ -63,6 +65,8 @@ const marcas = [
   logo28,
   logo29,
   logo30,
+  logo31,
+  logo32,
 ];
 
 const CarruselMarcas = () => {
