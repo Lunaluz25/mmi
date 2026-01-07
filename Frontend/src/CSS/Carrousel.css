@@ -15,7 +15,6 @@
   padding-top: 100px;
   margin: 0;
 
-
 /* ========================
    CONTENEDOR (FULL WIDTH)
 ======================== */
@@ -72,4 +71,5 @@
   .carousel-container {
     height: 220px;
   }
+}
 }
