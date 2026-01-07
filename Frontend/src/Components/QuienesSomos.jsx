@@ -1,6 +1,7 @@
 import React from "react";
 import "../CSS/QuienesSomos.css";
 import "../CSS/Catalogo.css";
+import imagen from "../assets/1234.jpeg";
 const QuienesSomos = () => {
   return (
     <>
@@ -10,15 +11,13 @@ const QuienesSomos = () => {
           <p className="texto">
             <span className="resaltado">MMI Industrial</span> es una empresa
             dedicada a la comercialización de productos de ferretería industrial
-            en Tucumán y provincias limítrofes. Nos especializamos en ofrecer
+            en Tucumán y en todo el NOA. Nos especializamos en ofrecer
             una amplia gama de productos de alta calidad, respaldados por marcas
             reconocidas en el mercado. En Ferretería Industrial Montenegro, nos
             enorgullecemos de nuestra filosofía empresarial, la cual se sustenta
-            en cuatro pilares fundamentales: Seriedad, Responsabilidad,
-            Compromiso y Honestidad. Estos valores nos guían en cada una de
-            nuestras operaciones y nos permiten construir relaciones sólidas y
-            duraderas con nuestros clientes.
+            en cuatro pilares fundamentales.
           </p>
+          <img src={imagen} alt="img" />
         </div>
       </section>
 

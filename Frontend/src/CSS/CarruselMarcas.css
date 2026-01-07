@@ -25,11 +25,16 @@
    TÍTULO
 ======================== */
 .carousel-title {
-  margin: 0;                 /* elimina espacio extra */
+  margin: 0;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.2;
+
+  color: #000; /* letras negras */
+  text-shadow:
+    0 2px 0 rgba(255, 255, 255, 0.85),  /* reflejo blanco */
+    0 2px 4px rgba(0, 0, 0, 0.15);      /* profundidad */
 }
 
 /* ========================
@@ -94,10 +99,12 @@
     padding: 0.6rem 0;
     gap: 0.4rem;
   }
-
   .carousel-title {
-    font-size: 1.2rem;
+    text-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.7);
   }
+}
+
 
   .carousel-container {
     height: 50px;
@@ -110,4 +117,4 @@
   .carousel-track {
     gap: 2rem;
   }
-}
+
