@@ -2,13 +2,11 @@ import React, { useEffect, useState } from "react";
 import "../CSS/Carrousel.css";
 
 const images = [
-  new URL("../assets/1.jpg", import.meta.url).href,
-  new URL("../assets/2.jpg", import.meta.url).href,
+  new URL("../assets/6.jpg", import.meta.url).href,
+  new URL("../assets/7.jpg", import.meta.url).href,
   new URL("../assets/3.jpg", import.meta.url).href,
   new URL("../assets/4.jpg", import.meta.url).href,
   new URL("../assets/5.jpg", import.meta.url).href,
-  new URL("../assets/6.jpg", import.meta.url).href,
-  new URL("../assets/7.jpg", import.meta.url).href,
 ];
 
 const Carrousel = () => {
