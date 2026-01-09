@@ -51,7 +51,7 @@
 .carousel-slide img {
   width: 100%;        /* OCUPA TODO EL ANCHO */
   height: 100%;       /* OCUPA TODA LA ALTURA */
-  object-fit: cover; /* cambia a cover si querés recorte */
+   /* cambia a cover si querés recorte */
   background: transparent;
   box-shadow: none;
   border-radius: 0;
