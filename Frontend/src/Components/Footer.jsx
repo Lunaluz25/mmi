@@ -23,7 +23,6 @@ const Footer = () => {
 
             <p className="footer-item">📞 +5 9 381 4264736</p>
             <p className="footer-item">📧 administracion@mmiindustrial.com.ar</p>
-            <p className="footer-item">📧 cobranzas@mmiindustrial.com.ar</p>
             <p className="footer-item">📧 cotizaciones@mmiindustrial.com.ar</p>
             <p className="footer-item">📍 Domingo garcia 998, San Miguel de Tucumán</p>
           </div>
